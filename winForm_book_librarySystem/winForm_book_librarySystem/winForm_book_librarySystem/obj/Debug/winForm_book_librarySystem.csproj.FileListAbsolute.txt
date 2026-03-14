@@ -1,0 +1,9 @@
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\bin\Debug\winForm_book_librarySystem.exe.config
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\bin\Debug\winForm_book_librarySystem.exe
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\bin\Debug\winForm_book_librarySystem.pdb
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\obj\Debug\winForm_book_librarySystem.csproj.AssemblyReference.cache
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\obj\Debug\winForm_book_librarySystem.Properties.Resources.resources
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\obj\Debug\winForm_book_librarySystem.csproj.GenerateResource.cache
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\obj\Debug\winForm_book_librarySystem.csproj.CoreCompileInputs.cache
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\obj\Debug\winForm_book_librarySystem.exe
+C:\Users\ZZ219\source\repos\winForm_book_librarySystem\winForm_book_librarySystem\obj\Debug\winForm_book_librarySystem.pdb
