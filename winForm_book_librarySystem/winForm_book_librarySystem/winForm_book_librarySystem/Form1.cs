@@ -8,6 +8,10 @@ namespace winForm_book_librarySystem
         public Form1()
         {
             InitializeComponent();
+            UiTheme.Apply(this);
+            panelHero.BackColor = System.Drawing.Color.FromArgb(0, 120, 212);
+            lblHeroTitle.ForeColor = System.Drawing.Color.White;
+            lblHeroSubtitle.ForeColor = System.Drawing.Color.White;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
