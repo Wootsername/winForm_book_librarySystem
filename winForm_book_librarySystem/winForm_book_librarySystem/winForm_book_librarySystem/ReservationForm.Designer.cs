@@ -9,6 +9,7 @@ namespace winForm_book_librarySystem
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnReserve;
+        private System.Windows.Forms.Button btnBorrow;
 
         protected override void Dispose(bool disposing)
         {
@@ -26,6 +27,7 @@ namespace winForm_book_librarySystem
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnReserve = new System.Windows.Forms.Button();
+            this.btnBorrow = new System.Windows.Forms.Button();
 
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             this.SuspendLayout();
@@ -50,15 +52,21 @@ namespace winForm_book_librarySystem
             this.dgvBooks.MultiSelect = false;
             this.dgvBooks.ReadOnly = true;
 
-            this.btnReserve.Location = new System.Drawing.Point(20, 400);
+            this.btnBorrow.Location = new System.Drawing.Point(20, 400);
+            this.btnBorrow.Size = new System.Drawing.Size(100, 30);
+            this.btnBorrow.Text = "Borrow Book";
+            this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
+
+            this.btnReserve.Location = new System.Drawing.Point(130, 400);
             this.btnReserve.Size = new System.Drawing.Size(100, 30);
-            this.btnReserve.Text = "Borrow Book";
+            this.btnReserve.Text = "Reserve Book";
             this.btnReserve.Click += new System.EventHandler(this.btnReserve_Click);
 
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.dgvBooks);
+            this.Controls.Add(this.btnBorrow);
             this.Controls.Add(this.btnReserve);
 
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();

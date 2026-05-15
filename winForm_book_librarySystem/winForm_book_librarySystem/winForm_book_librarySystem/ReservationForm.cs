@@ -54,7 +54,17 @@ namespace winForm_book_librarySystem
             LoadAvailableBooks();
         }
 
+        private void btnBorrow_Click(object sender, EventArgs e)
+        {
+            SubmitRequest("Borrow request submitted successfully! Status: Pending Librarian Approval.");
+        }
+
         private void btnReserve_Click(object sender, EventArgs e)
+        {
+            SubmitRequest("Reservation request submitted successfully! Status: Pending Librarian Approval.");
+        }
+
+        private void SubmitRequest(string successMessage)
         {
             if (dgvBooks.SelectedRows.Count > 0)
             {
@@ -80,7 +90,7 @@ namespace winForm_book_librarySystem
                             context.Reservations.Add(reservation);
                             context.SaveChanges();
 
-                            MessageBox.Show("Borrow request submitted successfully! Status: Pending Librarian Approval.");
+                            MessageBox.Show(successMessage);
                             LoadAvailableBooks();
                         }
                         else
@@ -92,12 +102,12 @@ namespace winForm_book_librarySystem
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error reserving book: " + ex.Message);
+                    MessageBox.Show("Error processing request: " + ex.Message);
                 }
             }
             else
             {
-                MessageBox.Show("Please select a book to reserve.");
+                MessageBox.Show("Please select a book.");
             }
         }
     }
