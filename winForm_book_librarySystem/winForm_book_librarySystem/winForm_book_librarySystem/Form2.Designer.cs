@@ -73,7 +73,7 @@ namespace winForm_book_librarySystem
             // transactionToolStripMenuItem
             // 
             this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
-            this.transactionToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.transactionToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.transactionToolStripMenuItem.Text = "Transaction";
             // 
             // reportsToolStripMenuItem
@@ -100,10 +100,12 @@ namespace winForm_book_librarySystem
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Library System";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

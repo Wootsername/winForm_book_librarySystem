@@ -168,7 +168,7 @@ namespace winForm_book_librarySystem
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(32, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Book ID:";
             // 
@@ -183,6 +183,7 @@ namespace winForm_book_librarySystem
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Book Records";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // gridBooks
             // 
@@ -231,6 +232,7 @@ namespace winForm_book_librarySystem
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridBooks)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

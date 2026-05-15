@@ -106,5 +106,10 @@ namespace winForm_book_librarySystem
             public string Title { get; set; }
             public string Author { get; set; }
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
