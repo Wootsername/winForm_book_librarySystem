@@ -16,7 +16,7 @@ namespace winForm_book_librarySystem
 
             try
             {
-                // Auto-setup database and seed default users
+                // Auto-setup database, seed default users and dummy books
                 using (var context = new LibraryContext())
                 {
                     context.Database.Migrate();
@@ -32,6 +32,17 @@ namespace winForm_book_librarySystem
                     if (!context.Users.Any(u => u.Role == "Student"))
                     {
                         context.Users.Add(new User { FullName = "John Doe", Email = "student@library.com", Password = "student", Role = "Student" });
+                    }
+
+                    if (!context.Books.Any())
+                    {
+                        context.Books.AddRange(
+                            new Book { Title = "The Great Gatsby", Author = "F. Scott Fitzgerald", Genre = "Classic", TotalCopies = 5, AvailableCopies = 5 },
+                            new Book { Title = "To Kill a Mockingbird", Author = "Harper Lee", Genre = "Classic", TotalCopies = 3, AvailableCopies = 3 },
+                            new Book { Title = "1984", Author = "George Orwell", Genre = "Dystopian", TotalCopies = 8, AvailableCopies = 8 },
+                            new Book { Title = "Pride and Prejudice", Author = "Jane Austen", Genre = "Romance", TotalCopies = 4, AvailableCopies = 4 },
+                            new Book { Title = "The Catcher in the Rye", Author = "J.D. Salinger", Genre = "Classic", TotalCopies = 6, AvailableCopies = 6 }
+                        );
                     }
 
                     context.SaveChanges();
