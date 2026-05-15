@@ -52,7 +52,7 @@ namespace winForm_book_librarySystem
 
             this.btnReserve.Location = new System.Drawing.Point(20, 400);
             this.btnReserve.Size = new System.Drawing.Size(100, 30);
-            this.btnReserve.Text = "Reserve Book";
+            this.btnReserve.Text = "Borrow Book";
             this.btnReserve.Click += new System.EventHandler(this.btnReserve_Click);
 
             this.Controls.Add(this.txtSearch);

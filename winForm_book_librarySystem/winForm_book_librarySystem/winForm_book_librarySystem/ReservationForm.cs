@@ -80,7 +80,7 @@ namespace winForm_book_librarySystem
                             context.Reservations.Add(reservation);
                             context.SaveChanges();
 
-                            MessageBox.Show("Book reserved successfully! Status: Pending.");
+                            MessageBox.Show("Borrow request submitted successfully! Status: Pending Librarian Approval.");
                             LoadAvailableBooks();
                         }
                         else

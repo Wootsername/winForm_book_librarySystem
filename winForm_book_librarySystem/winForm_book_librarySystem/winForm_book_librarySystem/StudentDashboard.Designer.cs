@@ -47,7 +47,7 @@ namespace winForm_book_librarySystem
 
             this.btnReserveBook.Location = new System.Drawing.Point(630, 20);
             this.btnReserveBook.Size = new System.Drawing.Size(150, 30);
-            this.btnReserveBook.Text = "Reserve a New Book";
+            this.btnReserveBook.Text = "Borrow a New Book";
             this.btnReserveBook.Click += new System.EventHandler(this.btnReserveBook_Click);
 
             this.btnNotifications.Location = new System.Drawing.Point(460, 20);
