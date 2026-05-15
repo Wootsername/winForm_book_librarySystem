@@ -16,6 +16,7 @@ namespace winForm_book_librarySystem
         {
             form.BackColor = DarkNavy;
             form.ForeColor = LightGray;
+            form.StartPosition = FormStartPosition.CenterScreen;
 
             ApplyToControls(form.Controls);
         }
