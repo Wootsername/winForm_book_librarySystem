@@ -13,7 +13,8 @@ namespace winForm_book_librarySystem.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=EnhancedLibraryDB;Trusted_Connection=True;");
+                string connectionString = "server=localhost;user=root;password=;database=enhanced_library_db";
+                optionsBuilder.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 21)));
             }
         }
 
