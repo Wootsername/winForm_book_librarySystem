@@ -53,7 +53,7 @@ namespace winForm_book_librarySystem
                 MessageBox.Show("Failed to initialize database: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Application.Run(new Form1());
+            Application.Run(new LoginForm());
         }
     }
 }

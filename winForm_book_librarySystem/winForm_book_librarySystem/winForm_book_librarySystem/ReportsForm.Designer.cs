@@ -27,6 +27,11 @@ namespace winForm_book_librarySystem
 
             this.SuspendLayout();
 
+            this.cmbReportType.Name = "cmbReportType";
+            this.btnLoadReport.Name = "btnLoadReport";
+            this.btnExportPDF.Name = "btnExportPDFOutline";
+            this.reportViewer1.Name = "reportViewer1";
+
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Text = "Reports";
 

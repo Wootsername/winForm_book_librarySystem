@@ -123,14 +123,14 @@ namespace winForm_book_librarySystem
             sb.AppendLine("<TablixRow><Height>0.25in</Height><TablixCells>");
             foreach (DataColumn col in dt.Columns)
             {
-                sb.AppendLine($"<TablixCell><CellContents><Textbox Name=\"Header{col.ColumnName}\"><Paragraphs><Paragraph><TextRuns><TextRun><Value>{col.ColumnName}</Value><Style><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs></Textbox></CellContents></TablixCell>");
+                sb.AppendLine($"<TablixCell><CellContents><Textbox Name=\"Header{col.ColumnName}\"><Paragraphs><Paragraph><TextRuns><TextRun><Value>{col.ColumnName}</Value><Style><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns></Paragraph></Paragraphs><Style><TextAlign>Left</TextAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>");
             }
             sb.AppendLine("</TablixCells></TablixRow>");
             
             sb.AppendLine("<TablixRow><Height>0.25in</Height><TablixCells>");
             foreach (DataColumn col in dt.Columns)
             {
-                sb.AppendLine($"<TablixCell><CellContents><Textbox Name=\"Data{col.ColumnName}\"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!{col.ColumnName}.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs></Textbox></CellContents></TablixCell>");
+                sb.AppendLine($"<TablixCell><CellContents><Textbox Name=\"Data{col.ColumnName}\"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!{col.ColumnName}.Value</Value></TextRun></TextRuns></Paragraph></Paragraphs><Style><TextAlign>Left</TextAlign><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>");
             }
             sb.AppendLine("</TablixCells></TablixRow>");
 

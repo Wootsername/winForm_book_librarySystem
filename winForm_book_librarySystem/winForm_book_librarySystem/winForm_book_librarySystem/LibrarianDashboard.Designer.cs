@@ -37,6 +37,10 @@ namespace winForm_book_librarySystem
             ((System.ComponentModel.ISupportInitialize)(this.chartTransactions)).BeginInit();
             this.SuspendLayout();
 
+            this.btnManageBooks.Name = "btnManageBooksOutline";
+            this.btnManageReservations.Name = "btnManageReservationsOutline";
+            this.btnReports.Name = "btnReportsSolid";
+
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.Text = "Librarian Dashboard";
             this.Activated += new System.EventHandler(this.LibrarianDashboard_Activated);
